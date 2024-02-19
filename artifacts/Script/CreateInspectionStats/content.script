@@ -1,0 +1,22 @@
+var inspectionData = await entities.inspections.find();
+var inspectionCount = {
+    complete: 0,
+    assigned: 0,
+    rejected: 0,
+    submitted: 0,
+}
+
+inspectionData.forEach(inspection => {
+    if(inspection.status === 'Complete') {
+        inspectionCount.complete ++;
+    } else if(inspection.status === 'Assigned') {
+        inspectionCount.assigned ++;
+    } else if(inspection.status === 'Rejected') {
+        inspectionCount.rejected ++;
+    } else if(inspection.status === 'Submitted') {
+        inspectionCount.submitted ++;
+    }
+});
+
+result = inspectionCount;
+complete();

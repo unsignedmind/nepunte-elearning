@@ -1,0 +1,31 @@
+{
+	"id": "2574e726-8a11-44b9-bd71-ddc40261d353",
+	"createdAt": "2024-01-29T14:22:24.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "8ea05743-59a8-4275-a651-ebdb9e37a176",
+			"name": "equipment",
+			"contextname": "equipment"
+		},
+		{
+			"id": "c40ec6fa-a600-4eb8-8da9-c45682e10912",
+			"name": "inspections",
+			"contextname": "inspections"
+		}
+	],
+	"apis": [],
+	"name": "GetFieldWorkerInspections",
+	"ver": "24.1.29.1647",
+	"description": null,
+	"content": "file:///content.script",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "7cb91b08-9fd0-4189-9ca9-48d55093a9da",
+	"package": "ef221f92-f8e7-4fc3-93a0-9aacca956951"
+}

@@ -1,0 +1,7 @@
+// if (typeof assigned_for_checking === "undefined" || assigned_for_checking === null || assigned_for_checking === "") { return; }  
+
+if(assigned_for_checking) {
+    return "sap-icon://activity-individual";     
+} else {
+    return "sap-icon://activity-items";     
+}

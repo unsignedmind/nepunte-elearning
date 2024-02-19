@@ -1,0 +1,6 @@
+cameraUploadButton.setEnabled(false);
+savePictureButton.setType('Accept');
+savePictureButton.setEnabled(false);
+tabPictureView.setIconColor('Positive');
+
+checkIfReadyToSubmit();

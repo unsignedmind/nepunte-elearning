@@ -1,0 +1,13 @@
+if(sap.n) {
+    sap.n.Shell.attachInit(function (data) {
+        var options = {
+            parameters: {
+                "where": JSON.stringify({'part_number': data.objectKey, status: 'Submitted'})
+            }
+        };
+
+        apigetInspections(options);        
+        
+        console.log(data);
+    });
+}

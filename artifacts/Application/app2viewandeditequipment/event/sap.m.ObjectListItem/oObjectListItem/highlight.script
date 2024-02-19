@@ -1,0 +1,7 @@
+if (typeof days_until_check === "undefined" || days_until_check === null || days_until_check === "") { return; }  
+
+if(days_until_check > 1) {
+    return "Success";
+} else {
+    return "Error";
+}

@@ -1,0 +1,70 @@
+{
+	"id": "c40ec6fa-a600-4eb8-8da9-c45682e10912",
+	"createdAt": "2023-12-21T14:46:36.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "e1980c55-e6e7-45d8-ba15-6f9e412e8e80",
+			"fieldName": "employeeID",
+			"fieldType": "text",
+			"isUnique": false
+		},
+		{
+			"id": "f9a7eefb-a14e-47ff-b855-c0d45c281449",
+			"fieldName": "employeeName",
+			"fieldType": "text",
+			"isUnique": false
+		},
+		{
+			"id": "e92d4d1f-eb60-4d60-ef5c-dd0f90880392",
+			"fieldName": "part_number",
+			"fieldType": "text",
+			"isUnique": false
+		},
+		{
+			"id": "2dbe90c5-2c9b-450c-df39-e0e6a0113c52",
+			"fieldName": "status",
+			"fieldType": "text",
+			"isUnique": false,
+			"description": "Assigned / Submitted / Complete / Rejected"
+		},
+		{
+			"id": "df07a880-6d99-4930-b014-3fbecd485e33",
+			"fieldName": "barcode_scan",
+			"fieldType": "integer",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "1aecc491-d5ce-49e7-a650-8e69375bbe85",
+			"fieldName": "comments",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "7fa239f2-ece8-446e-932a-48c3cc07af9f",
+			"fieldName": "attachments",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "109fd967-58d0-4f3f-b16c-eb11b8c4c1b0",
+			"fieldName": "signature",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "inspections",
+	"description": null,
+	"ver": "24.1.30.2318",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "ef221f92-f8e7-4fc3-93a0-9aacca956951",
+	"rolesRead": [],
+	"rolesWrite": []
+}

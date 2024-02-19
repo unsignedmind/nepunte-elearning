@@ -1,0 +1,10 @@
+if(commentTextarea.getValue() !== '') {
+    saveCommentButton.setType('Accept');
+    saveCommentButton.setEnabled(false);
+    commentTextarea.setEditable(false);
+    tabCommentsView.setIconColor('Positive');
+
+    checkIfReadyToSubmit();
+}  else {
+    sap.m.MessageToast.show("Please provide a comment");    
+}

@@ -1,0 +1,18 @@
+var moment = modules.moment;
+var currentDate = moment(new Date(), "YYYY-MM-DD");
+const equipmentTable = await entities.equipment.createQueryBuilder("alias").getMany();
+
+for(i = 0; i < equipmentTable.length; i++) {
+    console.log("---------------------------------------------------");
+    
+    var checkupDate = moment(equipmentTable[i].checkup_date, "YYYY-MM-DD");
+    var checkupInterval = equipmentTable[i].checkup_interval;
+    var dateOfTheNextCheck = moment(checkupDate).add(checkupInterval, 'days');
+
+    var daysLeft = Math.round(moment.duration(dateOfTheNextCheck.diff(currentDate)).asDays());
+
+    console.log(equipmentTable[i], daysLeft);
+    await entities.equipment.update({ part_number: equipmentTable[i].part_number }, { days_until_check: daysLeft });
+}
+
+complete();

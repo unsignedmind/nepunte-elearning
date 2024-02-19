@@ -1,0 +1,32 @@
+// Replace yourField with FieldName
+const context = oEvent.oSource.getBindingContext();  
+
+// Get Single Field
+const value = context.getProperty("yourField");
+
+// Get Entire Model
+const data = context.getObject();
+
+// push data to detail page
+modelequipmentDetailPage.setData(data);
+
+// handle pdf
+if(data.pdf) {
+    var pdfurl = createDataURL(data.pdf);
+    oPDFViewer.setSource(pdfurl);
+    oPanelDocuments.setVisible(true);
+}
+
+// Handle euquipment assignment
+if(data.assigned_for_checking) {
+    oTextAssignedTo.setText("Assigned to " + data.assigned_to);
+
+    oHBoxAssignedTo.setVisible(true);
+    oHBoxAssignLockUpdate.setVisible(false);
+} else {
+    oHBoxAssignedTo.setVisible(false);
+    oHBoxAssignLockUpdate.setVisible(true);
+}
+
+// Navigate
+oApp.to(equipmentDetailPage);

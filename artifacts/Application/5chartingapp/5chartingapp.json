@@ -1,0 +1,300 @@
+{
+	"id": "bef46398-2f9a-46dc-9931-be7f014a37d1",
+	"createdAt": "2024-02-02T15:48:48.000Z",
+	"createdBy": "admin",
+	"objects": [
+		{
+			"fieldNo": "1",
+			"fieldName": "oShell",
+			"fieldParent": 0,
+			"fieldType": "sap.m.Shell",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "2",
+					"fieldName": "oApp",
+					"fieldParent": "1",
+					"fieldType": "sap.m.App",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "4",
+							"fieldName": "oPage",
+							"fieldParent": "2",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "Full Screen",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "showHeader",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "db8cf811-1a19-456f-b5b1-805dac1390eb",
+									"fieldName": "carosuel",
+									"fieldParent": "4",
+									"fieldType": "sap.m.Carousel",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "ce751af8-30bc-4057-9161-fe8bba973d60",
+											"fieldName": "gdpPage",
+											"fieldParent": "db8cf811-1a19-456f-b5b1-805dac1390eb",
+											"fieldType": "sap.m.Page",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "showHeader",
+													"grouping": "Properties",
+													"value": "false",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "51c75a5a-f6fd-40dc-96b5-3c49583a0cf3",
+													"fieldName": "gdpChart",
+													"fieldParent": "ce751af8-30bc-4057-9161-fe8bba973d60",
+													"fieldType": "neptune.chart.highchart",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "title.text",
+															"grouping": "Properties",
+															"value": "GDP Page",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "73592e28-401e-49dd-fbeb-74a3bc21ede1",
+															"fieldName": "oLine",
+															"fieldParent": "51c75a5a-f6fd-40dc-96b5-3c49583a0cf3",
+															"fieldType": "neptune.chart.series.line",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [],
+															"data": []
+														}
+													]
+												}
+											]
+										},
+										{
+											"fieldNo": "472e58c0-6e1e-4f04-cea5-f38b65170d2e",
+											"fieldName": "workOrderPage",
+											"fieldParent": "db8cf811-1a19-456f-b5b1-805dac1390eb",
+											"fieldType": "sap.m.Page",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "title",
+													"grouping": "Properties",
+													"value": "Work Order Page",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "showHeader",
+													"grouping": "Properties",
+													"value": "false",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "1c891505-b638-4df2-a7fb-3ae6b80e2322",
+													"fieldName": "statusCountsChart",
+													"fieldParent": "472e58c0-6e1e-4f04-cea5-f38b65170d2e",
+													"fieldType": "neptune.chart.highchart",
+													"script": "",
+													"customComponent": false,
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "title.text",
+															"grouping": "Properties",
+															"value": "Status Counts Chart",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "90af98be-fd18-4293-b93b-e2e3ee4d14b9",
+															"fieldName": "oColumn",
+															"fieldParent": "1c891505-b638-4df2-a7fb-3ae6b80e2322",
+															"fieldType": "neptune.chart.series.column",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [],
+															"data": []
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "36ab6689-643c-457b-cfbf-0c91edbe9656",
+					"fieldName": "getStatusCounts",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"customComponent": false,
+					"restSource": "91f3f4fb-08c2-45e3-80d2-33999f3e4149",
+					"restOperation": "e2245c2f-48c1-40c7-acc5-84f76e5cb3b8",
+					"request": [],
+					"response": [
+						{
+							"status": "200",
+							"dataId": "db2ee9a8-059e-49bb-c535-4dc228360d80",
+							"modelFieldNo": "cbadfac6-c769-45ce-cf20-0973123e8be2"
+						}
+					],
+					"attributes": [
+						{
+							"attribute": "ajaxSuccess",
+							"grouping": "Events",
+							"value": "Anonymous Function",
+							"script": "file://event/neptune.restapi/getStatusCounts/ajaxSuccess.script",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "cbadfac6-c769-45ce-cf20-0973123e8be2",
+					"fieldName": "statusCounts",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model.object",
+					"script": "",
+					"customComponent": false,
+					"bindingValue": "InspectionStats>Counts",
+					"bindingType": "u",
+					"bindingSource": "API",
+					"bindingParentID": "91f3f4fb-08c2-45e3-80d2-33999f3e4149",
+					"bindingPathID": "db2ee9a8-059e-49bb-c535-4dc228360d80",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "091e9d27-45d2-4593-da36-c0e2d67017b0",
+					"fieldName": "init",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": "file://script/neptune.Script/init.script",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"ver": "24.2.2.1722",
+	"application": "5chartingapp",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": true,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_fiori_3",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": true,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"apis": [
+		{
+			"id": "91f3f4fb-08c2-45e3-80d2-33999f3e4149",
+			"name": "InspectionStats",
+			"ver": "24.2.2.176"
+		}
+	],
+	"package": "ef221f92-f8e7-4fc3-93a0-9aacca956951"
+}

@@ -1,0 +1,33 @@
+// --- Built in eLearning! ---
+
+// Get the details from the page
+var detailPageData = modelequipmentDetailPage.getData();
+
+// Get selected employee from the dialog
+oSelectEmployee.getSelectedKey();
+oSelectEmployee._getSelectedItemText();
+
+var options = {
+    data: {
+        "employeeID": oSelectEmployee.getSelectedKey(),
+        "employeeName": oSelectEmployee._getSelectedItemText(),
+        "part_number": detailPageData.part_number,
+        "status": "Assigned",
+    }
+};
+
+apiassignEquipmentToWorker(options);
+
+// update equipment table
+
+var options = {
+    parameters: {
+        "where": JSON.stringify({ "part_number": detailPageData.part_number })
+    },
+    data: {
+        "assigned_for_checking": true,
+        "assigned_to": oSelectEmployee._getSelectedItemText(),
+    }
+};
+
+apiupdateEquipment(options);

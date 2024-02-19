@@ -1,0 +1,4 @@
+this.getValue() == 1 ?
+    labelDays.setText("Service Interval - 1 Day")
+    :
+    labelDays.setText(`Service Interval - ${this.getValue()} Days`)

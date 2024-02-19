@@ -1,0 +1,5 @@
+if (assigned_for_checking === true) {
+    return "#000000";
+}  else {
+    return "#737373";
+}

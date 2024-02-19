@@ -1,0 +1,1 @@
+modelinspectionDetailsForm.setData(modelinspectionsArray.getData()[0]);

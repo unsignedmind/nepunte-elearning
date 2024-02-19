@@ -1,0 +1,182 @@
+{
+	"id": "ef221f92-f8e7-4fc3-93a0-9aacca956951",
+	"createdAt": "2023-12-20T21:59:36.000Z",
+	"createdBy": "admin",
+	"git": {
+		"remote": "https://github.com/unsignedmind/nepunte-elearning.git"
+	},
+	"name": "eLearning",
+	"description": null,
+	"ver": "24.2.19.2158",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "f61cdf47-b167-4ca3-8932-a7aa381a916a",
+			"application": "app1create",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "de2ef40d-e023-49d2-811b-d88aa8c38e4f",
+			"application": "wf_details_embedded",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "bef46398-2f9a-46dc-9931-be7f014a37d1",
+			"application": "5chartingapp",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "aecefdb0-d321-4a47-a196-b1d638ef8e01",
+			"application": "app2viewandeditequipment",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "7a01881b-2b9b-4be9-af1e-d0abc61bf7b3",
+			"application": "app2viewandeditequipment_v2",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "3eced943-faba-4d7d-a587-ea515c045039",
+			"application": "3fieldworkerinspectionportal",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "fd385eba-68c5-4e2b-ae92-7ef4d0f84dc2",
+			"name": "Script API Trigger calculate days until check",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "91f3f4fb-08c2-45e3-80d2-33999f3e4149",
+			"name": "InspectionStats",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "48879a0a-3c11-46bd-a5e3-40855dd3ba0a",
+			"name": "API inspections",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "1e5fba31-fa57-42ab-a978-db10619090e6",
+			"name": "API equipment",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "c40ec6fa-a600-4eb8-8da9-c45682e10912",
+			"name": "inspections",
+			"description": null
+		},
+		{
+			"id": "8ea05743-59a8-4275-a651-ebdb9e37a176",
+			"name": "equipment",
+			"description": null
+		}
+	],
+	"jsclass": [
+		{
+			"id": "c882242d-ec6a-4d1a-86b5-0c773ce1ffe3",
+			"name": "CreateEquipment",
+			"description": null
+		},
+		{
+			"id": "8251b006-6ccb-46e2-aee5-98cbab2319c9",
+			"name": "InspectionRejected",
+			"description": null
+		},
+		{
+			"id": "7f310ca9-5009-4e55-955d-b202feaab8d8",
+			"name": "InspectionApproved",
+			"description": null
+		},
+		{
+			"id": "346bae7b-8ab7-437a-b218-f4ed153b7df4",
+			"name": "CreateInspectionStats",
+			"description": null
+		},
+		{
+			"id": "2574e726-8a11-44b9-bd71-ddc40261d353",
+			"name": "GetFieldWorkerInspections",
+			"description": null
+		},
+		{
+			"id": "17d3162e-7c5e-4b9b-8024-fff4c115511b",
+			"name": "Calculate days_until_check",
+			"description": null
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "b6547ae6-dbfb-4591-a435-f100401c0ef0",
+			"name": "DataGenerator",
+			"description": null
+		},
+		{
+			"id": "7cb91b08-9fd0-4189-9ca9-48d55093a9da",
+			"name": "EqupimentCheckupScripts",
+			"description": null
+		},
+		{
+			"id": "53bf1244-7f37-417d-80d3-0f030b6f3ef7",
+			"name": "InspectionWorkflowScripts",
+			"description": null
+		}
+	],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [
+		{
+			"id": "979c6be0-fa83-49d9-a111-dc6d00143fd2",
+			"name": "eLearningLaunchpad",
+			"description": null
+		}
+	],
+	"certificates": [],
+	"role": [
+		{
+			"id": "23bb0fb4-3d1c-44b2-900b-4f49e40d28b7",
+			"name": "FieldWorkers",
+			"description": "Field Workers"
+		}
+	],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [
+		{
+			"id": "f40fe5df-6b2c-4725-8c37-d2e22574496c",
+			"name": "FieldWorkers",
+			"description": "Field Workers Group"
+		}
+	],
+	"script_scheduler": [],
+	"wf_definition": [
+		{
+			"id": "2d61093e-4945-4363-aa19-916cb96d26dc",
+			"title": "InspectionApproval",
+			"subTitle": null
+		}
+	],
+	"connector": [],
+	"events": []
+}

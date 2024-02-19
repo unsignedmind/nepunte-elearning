@@ -1,0 +1,20 @@
+.basePage {
+    background: linear-gradient(220deg, #3c76d9 38%, rgba(0,212,255,1) 100%);
+    background-size: cover;
+}
+
+.sapMLIB {
+    border-bottom: none;
+}
+
+.sapMITH {
+    box-shadow: none;
+}
+
+.sapMITBContent {
+    background-color: transparent;
+}
+
+.scan-dialog {
+    padding: 1rem;
+}

@@ -1,0 +1,333 @@
+{
+	"id": "de2ef40d-e023-49d2-811b-d88aa8c38e4f",
+	"createdAt": "2024-02-02T13:05:46.000Z",
+	"createdBy": "admin",
+	"objects": [
+		{
+			"fieldNo": "1f04685b-0cb0-44f1-89d8-fa2e7a30ea09",
+			"fieldName": "inspectionDetailsForm",
+			"fieldParent": 0,
+			"fieldType": "sap.ui.layout.form.SimpleForm",
+			"script": "",
+			"customComponent": false,
+			"bindingValue": "API inspections>inspections",
+			"bindingType": "u",
+			"bindingSource": "API",
+			"bindingParentID": "48879a0a-3c11-46bd-a5e3-40855dd3ba0a",
+			"bindingPathID": "9f36a836-17bf-4b22-f422-1843bd9365ce",
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "ca466d0e-1a1c-45b1-f24a-7b1cb5f20ed0",
+					"fieldName": "inspectionDetailsFormBarcodeScanText",
+					"fieldParent": "1f04685b-0cb0-44f1-89d8-fa2e7a30ea09",
+					"fieldType": "sap.m.Label",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "Barcode Scan",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "68db693b-f149-448d-a661-cd2c7a89b233",
+					"fieldName": "ininspectionDetailsFormeBarcodeScanInput",
+					"fieldParent": "1f04685b-0cb0-44f1-89d8-fa2e7a30ea09",
+					"fieldType": "sap.m.Text",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "{/barcode_scan}",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "b5529a7e-0669-4a59-9ec2-c2bcd6bc733d",
+					"fieldName": "inspectionDetailsFormcommentsText",
+					"fieldParent": "1f04685b-0cb0-44f1-89d8-fa2e7a30ea09",
+					"fieldType": "sap.m.Label",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "Comments",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "b8a026a3-33e2-446a-c4ab-8fb2868d5c70",
+					"fieldName": "ininspectionDetailsFormcommentsInput",
+					"fieldParent": "1f04685b-0cb0-44f1-89d8-fa2e7a30ea09",
+					"fieldType": "sap.m.Text",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "{/comments}",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "27661e00-247b-4e85-84ac-217c7c467cb5",
+					"fieldName": "inspectionDetailsFormattachmentsText",
+					"fieldParent": "1f04685b-0cb0-44f1-89d8-fa2e7a30ea09",
+					"fieldType": "sap.m.Label",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "Attachments",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "235afb53-1272-4caa-dfad-8e524d6e9da6",
+					"fieldName": "carousel",
+					"fieldParent": "1f04685b-0cb0-44f1-89d8-fa2e7a30ea09",
+					"fieldType": "sap.m.Carousel",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "height",
+							"grouping": "Properties",
+							"value": "300px",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "9c825c58-8689-42e7-8499-7d6d0915961f",
+							"fieldName": "attachmentPage",
+							"fieldParent": "235afb53-1272-4caa-dfad-8e524d6e9da6",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "cc828775-1256-468c-c0ed-7865752a3c1a",
+									"fieldName": "attachmentImage",
+									"fieldParent": "9c825c58-8689-42e7-8499-7d6d0915961f",
+									"fieldType": "sap.m.Image",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "src",
+											"grouping": "Properties",
+											"value": "{/attachments}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "height",
+											"grouping": "Properties",
+											"value": "100%",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						},
+						{
+							"fieldNo": "4e156b59-8e60-4bb6-915e-4f3c322fc3ad",
+							"fieldName": "signaturePage",
+							"fieldParent": "235afb53-1272-4caa-dfad-8e524d6e9da6",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "546e20c6-82d6-4fd6-f339-ce5af3e3ded4",
+									"fieldName": "signatureImage",
+									"fieldParent": "4e156b59-8e60-4bb6-915e-4f3c322fc3ad",
+									"fieldType": "sap.m.Image",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "src",
+											"grouping": "Properties",
+											"value": "{/signature}",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "height",
+											"grouping": "Properties",
+											"value": "100%",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "4477e650-c65b-41df-8ad7-18665c133cd7",
+					"fieldName": "init",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": "file://script/neptune.Script/init.script",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "6ff61254-d8ad-4033-a18b-4f7d42429840",
+					"fieldName": "inspectionsArray",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model.array",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "752302ce-c861-48a9-d071-ca0c1cd57376",
+					"fieldName": "getInspections",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"customComponent": false,
+					"restSource": "48879a0a-3c11-46bd-a5e3-40855dd3ba0a",
+					"restOperation": "c28be074-06a9-444e-bb68-ffeed628ee88",
+					"request": [],
+					"response": [
+						{
+							"status": 200,
+							"dataId": "9f36a836-17bf-4b22-f422-1843bd9365ce",
+							"modelFieldNo": "6ff61254-d8ad-4033-a18b-4f7d42429840"
+						}
+					],
+					"attributes": [
+						{
+							"attribute": "ajaxSuccess",
+							"grouping": "Events",
+							"value": "Anonymous Function",
+							"script": "file://event/neptune.restapi/getInspections/ajaxSuccess.script",
+							"language": "javascript",
+							"translation": []
+						}
+					],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"ver": "24.2.2.1453",
+	"application": "wf_details_embedded",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_fiori_3",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"apis": [
+		{
+			"id": "48879a0a-3c11-46bd-a5e3-40855dd3ba0a",
+			"name": "API inspections",
+			"ver": "24.2.2.1424"
+		}
+	],
+	"package": "ef221f92-f8e7-4fc3-93a0-9aacca956951"
+}

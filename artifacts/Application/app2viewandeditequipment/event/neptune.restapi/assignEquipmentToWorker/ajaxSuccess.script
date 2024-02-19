@@ -1,0 +1,8 @@
+// Use MessageToast
+sap.m.MessageToast.show("Assigned Successfuly");
+
+oDialogAssign.close();
+
+oApp.to(mainListPage);
+
+refreshButton.firePress();

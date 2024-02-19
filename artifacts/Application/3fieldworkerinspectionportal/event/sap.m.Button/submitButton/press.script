@@ -1,0 +1,28 @@
+// Use this script in your App or from external systems
+var wfData = {
+    "id": "2d61093e-4945-4363-aa19-916cb96d26dc",
+    "objectType": equipmentName.getText(),
+    "objectKey": partNumber.getText(),
+    "amount": equipmentName.getText(),
+    "currency": "",
+    "approver": ""
+}
+
+console.log(wfData);
+
+$.ajax({
+    type: "POST",
+    contentType: "application/json",
+    url: "/api/functions/WorkflowInbox/Start", // Remember full path if triggered externally
+    headers: { // Needed when triggered externally
+        "Authorization": "Basic xxxx ", // Or use Bearer + token (JWT from user)
+        "X-Requested-With": "XMLHttpRequest",
+    },
+    data: JSON.stringify(wfData),
+    success: function(data) {
+        submitInspection();
+    },
+    error: function(result, status) {
+        sap.m.MessageToast.show("Failes to submit");        // Error Handler
+    }
+});

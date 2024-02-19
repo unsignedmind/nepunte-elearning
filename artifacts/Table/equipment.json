@@ -1,0 +1,84 @@
+{
+	"id": "8ea05743-59a8-4275-a651-ebdb9e37a176",
+	"createdAt": "2023-12-21T14:44:28.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "67de25cd-0e31-44fe-f68e-a58712950205",
+			"fieldName": "name",
+			"fieldType": "text",
+			"isUnique": false
+		},
+		{
+			"id": "c480f883-6dd1-4bda-f4ef-bc3032f57bc9",
+			"fieldName": "part_number",
+			"fieldType": "text",
+			"isUnique": false
+		},
+		{
+			"id": "6d22afa5-c06f-4698-d9ad-33febaea32c2",
+			"fieldName": "latitude",
+			"fieldType": "decimal",
+			"isUnique": false
+		},
+		{
+			"id": "a195ea20-8b13-48c0-caa0-cf50f5df169f",
+			"fieldName": "longitude",
+			"fieldType": "decimal",
+			"isUnique": false
+		},
+		{
+			"id": "f97a6451-d7e4-4f0d-bdfa-09b1d7cf7758",
+			"fieldName": "checkup_date",
+			"fieldType": "timestamp",
+			"isUnique": false
+		},
+		{
+			"id": "0b6c4527-a38a-4aa1-b0c2-141d2a01a68c",
+			"fieldName": "checkup_interval",
+			"fieldType": "integer",
+			"isUnique": false
+		},
+		{
+			"id": "8ae1c6aa-833a-4ba6-a24a-d57c3208c77e",
+			"fieldName": "days_until_check",
+			"fieldType": "integer",
+			"isUnique": false,
+			"description": "Maintained automatically",
+			"isNullable": true
+		},
+		{
+			"id": "65955773-c4ef-4a7a-fb14-3f771c40b039",
+			"fieldName": "assigned_for_checking",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"description": "True or False",
+			"isNullable": true,
+			"default": "false"
+		},
+		{
+			"id": "d12fc309-e9bd-4116-8cd7-a1604e2d9076",
+			"fieldName": "assigned_to",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "5e4d0178-5eda-4eb9-db95-7957dfa1a0a3",
+			"fieldName": "pdf",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "equipment",
+	"description": null,
+	"ver": "24.1.28.1722",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "ef221f92-f8e7-4fc3-93a0-9aacca956951",
+	"rolesRead": [],
+	"rolesWrite": []
+}

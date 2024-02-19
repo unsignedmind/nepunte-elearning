@@ -1,0 +1,31 @@
+{
+	"id": "7f310ca9-5009-4e55-955d-b202feaab8d8",
+	"createdAt": "2024-01-31T19:21:08.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "c40ec6fa-a600-4eb8-8da9-c45682e10912",
+			"name": "inspections",
+			"contextname": "inspections"
+		},
+		{
+			"id": "8ea05743-59a8-4275-a651-ebdb9e37a176",
+			"name": "equipment",
+			"contextname": "equipment"
+		}
+	],
+	"apis": [],
+	"name": "InspectionApproved",
+	"ver": "24.2.2.150",
+	"description": null,
+	"content": "file:///content.script",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "53bf1244-7f37-417d-80d3-0f030b6f3ef7",
+	"package": "ef221f92-f8e7-4fc3-93a0-9aacca956951"
+}

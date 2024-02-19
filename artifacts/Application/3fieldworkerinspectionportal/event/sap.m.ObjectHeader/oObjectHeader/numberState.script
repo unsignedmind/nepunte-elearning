@@ -1,0 +1,7 @@
+if (typeof equip_days_until_check === "undefined" || equip_days_until_check === null || equip_days_until_check === "") { return; }  
+
+if(equip_days_until_check > 1) {
+    return 'Success';
+} else {
+    return 'Error';
+}

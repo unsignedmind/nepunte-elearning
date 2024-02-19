@@ -1,0 +1,21 @@
+log.info(wfData);
+
+await entities.inspections.createQueryBuilder()
+    .update()
+    .set({"status":"Complete"})
+    .where("part_number = :part_number", {part_number: wfData.objectKey})
+    .andWhere("status = :status", {status: 'Submitted'})
+    .execute();
+
+// Recommendation: use the entitites functions (neptune layer to type orm) whenever possible
+// await entities.inspections.update({"status": "Complete"}, {part_number: wf.objectKey});
+var currentDate = new Date();
+
+await entities.equipment.createQueryBuilder()
+    .update()
+    .set({"checkup_date": currentDate,"assigned_for_checking": false,"assigned_to": null})
+    .where("part_number = :part_number", {part_number: wfData.objectKey})
+    .execute();
+
+
+complete();

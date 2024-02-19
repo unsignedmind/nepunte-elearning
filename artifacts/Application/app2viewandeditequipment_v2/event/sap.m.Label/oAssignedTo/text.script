@@ -1,0 +1,5 @@
+if (assigned_to === null || assigned_to === "") {
+    return "----------";
+} else {
+    return "Assigned to " + assigned_to
+}

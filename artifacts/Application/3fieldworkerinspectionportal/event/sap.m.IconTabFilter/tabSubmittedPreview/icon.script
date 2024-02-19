@@ -1,0 +1,22 @@
+if (typeof inspections_status === "undefined" || inspections_status === null || inspections_status === "") { return; }  
+
+if(inspections_status === "Assigned") {
+    this.setIconColor('Default');
+    return "sap-icon://activity-individual";
+}
+
+if(inspections_status === "Submitted") {
+    this.setIconColor('Critical');
+    return "sap-icon://pending";
+}
+
+if(inspections_status === "Complete") {
+    this.setIconColor('Positive');
+    return "sap-icon://complete";
+}
+
+if(inspections_status === "Rejected") {
+    this.setIconColor('Negative');
+    return "sap-icon://fa-regular/window-close";
+}
+

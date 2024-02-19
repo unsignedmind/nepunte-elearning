@@ -1,0 +1,8 @@
+const context = oEvent.oSource.getBindingContext();
+const data = context.getObject();
+
+if (data.inspections_status === "Assigned") {
+    populateInspectionJobPage(data);
+} else {
+    sap.m.MessageToast.show("This inspection can't be changed");
+}

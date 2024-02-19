@@ -1,0 +1,26 @@
+{
+	"id": "346bae7b-8ab7-437a-b218-f4ed153b7df4",
+	"createdAt": "2024-02-02T16:00:43.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "c40ec6fa-a600-4eb8-8da9-c45682e10912",
+			"name": "inspections",
+			"contextname": "inspections"
+		}
+	],
+	"apis": [],
+	"name": "CreateInspectionStats",
+	"ver": "24.2.2.1710",
+	"description": null,
+	"content": "file:///content.script",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "b6547ae6-dbfb-4591-a435-f100401c0ef0",
+	"package": "ef221f92-f8e7-4fc3-93a0-9aacca956951"
+}

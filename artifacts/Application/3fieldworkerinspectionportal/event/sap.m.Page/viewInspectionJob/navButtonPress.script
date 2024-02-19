@@ -1,0 +1,31 @@
+var anySavedData = false;
+
+if (tabCommentsView.getIconColor() === 'Positive') { anySavedData = true };
+if (tabPictureView.getIconColor() === 'Positive') { anySavedData = true };
+if (tabBarcodeView.getIconColor() === 'Positive') { anySavedData = true };
+if (tabSignView.getIconColor() === 'Positive') { anySavedData = true };
+
+if(isAllDataPresentText.getText() === 'true') {
+    anySavedData = false;
+}
+
+if(anySavedData === true) {
+    jQuery.sap.require('sap.m.MessageBox');
+    sap.m.MessageBox.confirm(
+        'Are you sure you want to exit?',
+        {
+            actions: ['Yes', 'Cancel'],
+            onClose: function(sAction) {
+                if(sAction === 'Yes') {
+                    savePartialInspectionAndNavigate();
+                } else {
+                    return;
+                }
+            }
+        }
+    );
+} else {
+    oApp.to(myInspectionJobs);
+    apigetInspections();
+}
+

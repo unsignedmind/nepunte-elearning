@@ -1,0 +1,26 @@
+{
+	"id": "c882242d-ec6a-4d1a-86b5-0c773ce1ffe3",
+	"createdAt": "2024-01-29T14:40:27.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "8ea05743-59a8-4275-a651-ebdb9e37a176",
+			"name": "equipment",
+			"contextname": "equipment"
+		}
+	],
+	"apis": [],
+	"name": "CreateEquipment",
+	"ver": "24.1.29.1541",
+	"description": null,
+	"content": "file:///content.script",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "b6547ae6-dbfb-4591-a435-f100401c0ef0",
+	"package": "ef221f92-f8e7-4fc3-93a0-9aacca956951"
+}

@@ -1,0 +1,44 @@
+log.info(wfData);
+
+const inspection = await entities.inspections.createQueryBuilder("alias")
+    .where('part_number = :part_number', { part_number: wfData.objectKey })
+    .andWhere('status = :status', { status: 'Submitted' })
+    .getOne();
+
+
+await entities.inspections.createQueryBuilder()
+    .update()
+    .set({ "status": "Rejected" })
+    .where('part_number = :part_number', { part_number: wfData.objectKey })
+    .andWhere('status = :status', { status: 'Submitted' })
+    .execute();
+
+log.info('Updated currently "submitted" inspection to rejected');
+
+var uuidGenerator = modules.uuid.v4;
+
+// Insert one
+await entities.inspections.createQueryBuilder()
+    .insert()
+    .values(
+        { 
+            "employeeID": inspection.employeeID,
+            "employeeName": inspection.employeeName,
+            "part_number": inspection.part_number,
+            "status": 'Assigned',
+            "barcode_scan": "",
+            "comments": "",
+            "attachments": "",
+            "signature": "",
+            "createdAt": Date.now(),
+            "updatedAt": Date.now(),
+            "createdBy": "System",
+            "updatedBy": "System",
+            "id": uuidGenerator()
+        }
+    )
+    .execute();
+
+log.info('Inserted new inspection');
+
+complete();
